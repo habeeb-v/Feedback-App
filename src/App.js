@@ -1,4 +1,4 @@
-  import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+  import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
   import Header from './components/Header'
   import FeedbackList from './components/FeedbackList'
   import FeedbackStats from './components/FeedbackStats'
@@ -7,8 +7,6 @@
   import AboutPage from './pages/AboutPage'
   import { FeedbackProvider } from './components/context/FeedbackContext'
 
-
-  //http://localhost:3000
 function App() {
   return (
     <FeedbackProvider>

@@ -24,7 +24,7 @@ function FeedbackForm() {
       if(text === ''){
         setBtnDisabled(true)
         setMessage(null)
-      } else if(text !== '' && text.trim().length <= 10) {
+      } else if(text !== '' && text.length <= 9) {
         setMessage('Text must be atleast 10 characters!')
         setBtnDisabled(true)
       } else {
@@ -37,7 +37,7 @@ function FeedbackForm() {
     
     const handleSubmit = (e) => {
       e.preventDefault()
-      if(text.trim().length > 10) {
+      if(text.length > 9) {
         const newFeedback = {
           text,
           rating
